@@ -1,0 +1,115 @@
+.post{
+    width: 385px;
+    margin: 0px 25px 40px 25px;
+    box-shadow: rgba(140, 221, 208, 0.1) 0px 1px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postImg{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 7px;
+    align-items: center;
+}
+
+.postInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postCategory {
+    font-family: "Varela Round", sans-serif;
+    font-size: 12px;
+    color: #66bfbf;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+
+
+.postCategory:hover {
+    color: #b5c99a;
+}
+
+.postTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700px;
+    margin-top: 15px;
+    text-align: center;
+    color: #b5c99a;
+    text-decoration: none;
+}
+.createdByWhen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.createdBy, .createdWhen {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #93b6b6;
+    margin: 7px 0 8px;
+}
+
+
+.createdBy {
+    position: relative;
+    right: 6rem;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.createdBy:hover {
+    color: #b5c99a;
+}
+
+.createdWhen {
+    position: relative;
+    left: 6rem;
+}
+
+
+hr {
+    display: none;
+}
+
+.postDescription {
+    font-family: 'Varela', sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #66bfbf;
+    text-decoration: none;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /* These two webkits are how you make it trail off and not present the entire article. Just the snippet ;) */
+}
+
+@media screen and (max-width: 768px) {
+    .postCategory, .createdBy, .createdWhen {
+        font-size: 1rem;
+    }
+    .createdBy, .createdWhen {
+        padding: 1rem 0;
+    }
+    .postDescription {
+        font-size: 18px;
+    }
+    .postTitle {
+        font-size: 30px;
+    }
+}
