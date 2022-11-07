@@ -1,0 +1,155 @@
+.write { 
+    padding-top: 50px;   
+}
+
+.writeForm {
+    position: relative;
+}
+
+.writeFormGroup {
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.writeFormGroup2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 150px;
+}
+
+input, textarea {
+    color: #66bfbf;
+    background-color: #020f18;
+    border-style: none;
+    outline: 0;
+    border-bottom-color: 2px #93b6b6 solid;
+    margin-bottom: 1px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: #66bfbf 2px 2px 4px 0px inset, #93b6b6 -2px -2px 4px 1px inset;
+    border-radius: 7px;
+}
+
+.writeIcon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #66bfbf;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+
+.writeIcon:hover {
+    color: #72e4cb;
+    background-color: #0a2f44;
+}
+
+.writeInput, .writeText {
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+}
+
+.writeInput {
+    width: 70vw;
+}
+
+.writeInput:focused {
+    outline: none;
+}
+
+.writeText {
+    font-size: 20px;
+    height: 60vh;
+    width: 72vw;
+}
+
+.writeSubmit {
+    color: #66bfbf;
+    background-color: #061c29;
+    /* box-shadow: 0 2px 5px rgb(0, 0, 0, .16); */
+    padding: 10px;
+    /* border: none; */
+    border-color: #b5c99a;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.writeSubmit:hover {
+    color: #72e4cb;
+    background-color: #0a2f44;
+    color: #b5c99a;
+}
+
+.writeImg {
+    margin-left: 150px;
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.categoriesSelector {
+    border-radius: 10px;
+    padding: 10px;
+    color: #72e4cb;
+    background: #0a2f44;
+    border-color: #b5c99a;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3.2rem;
+    font-size: 1rem;
+}
+
+.writeCategories {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+}
+
+@media screen and (max-width:768px) {
+    .writeFormGroup {
+        margin: 1rem;
+    }
+    .writeText {
+        width: 100%;
+        margin: 1rem;
+    }
+    .writeIcon {
+        margin: 0 1rem;
+    }
+    .writeInput {
+        width: 100%;
+        margin-right: 1rem;
+    }
+    .categoriesSelector {
+        flex: 6;
+        justify-content: flex-start;
+        align-items: left;
+    }
+    .writeSubmit {
+        flex: 6;
+        margin-top: 10px;
+        margin-left: 3rem;
+    }
+    .writeFormGroup2 {
+        margin: 0 2rem;
+    }
+    .writeImg {
+        margin: 0;
+        width: 100%;
+    }
+}
